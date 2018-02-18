@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.quiz.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!--Question1-->
+        <TextView
+            style="@style/QuestionFont"
+            android:background="@drawable/question"
+            android:text="@string/q1" />
+
+        <io.github.kexanie.library.MathView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:engine="MathJax"
+            app:text="@string/q1_math" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp">
+
+            <RadioButton
+                android:id="@+id/q1rb1"
+                style="@style/AnswersStyle"
+                android:text="@string/q1a1" />
+
+            <RadioButton
+                android:id="@+id/q1rb2"
+                style="@style/AnswersStyle"
+                android:text="@string/q1a2" />
+
+            <RadioButton
+                android:id="@+id/q1rb3"
+                style="@style/AnswersStyle"
+                android:text="@string/q1a3" />
+
+            <RadioButton
+                android:id="@+id/q1rb4"
+                style="@style/AnswersStyle"
+                android:text="@string/q1a4" />
+
+        </RadioGroup>
+
+        <!--Question2-->
+
+        <TextView
+            style="@style/QuestionFont"
+            android:background="@drawable/question"
+            android:text="@string/q2" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp">
+
+            <RadioButton
+                android:id="@+id/q2rb1"
+                style="@style/AnswersStyle"
+                android:text="@string/q2a1" />
+
+            <RadioButton
+                android:id="@+id/q2rb2"
+                style="@style/AnswersStyle"
+                android:text="@string/q2a2" />
+
+            <RadioButton
+                android:id="@+id/q2rb3"
+                style="@style/AnswersStyle"
+                android:text="@string/q2a3" />
+
+            <RadioButton
+                android:id="@+id/q2rb4"
+                style="@style/AnswersStyle"
+                android:text="@string/q2a4" />
+
+        </RadioGroup>
+
+        <!--Question3-->
+
+        <TextView
+            style="@style/QuestionFont"
+            android:background="@drawable/question"
+            android:text="@string/q3" />
+
+        <io.github.kexanie.library.MathView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:engine="MathJax"
+            app:text="@string/q3_math" />
+
+
+        <EditText
+            android:id="@+id/q3et1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:ems="10"
+            android:hint="@string/edit_txt_hint"
+            android:inputType="number" />
+
+        <!--Question4-->
+
+        <TextView
+            style="@style/QuestionFont"
+            android:background="@drawable/question"
+            android:text="@string/q4" />
+
+        <io.github.kexanie.library.MathView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:engine="MathJax"
+            app:text="@string/q4_math" />
+
+        <CheckBox
+            android:id="@+id/q4ch1"
+            style="@style/AnswersStyle"
+            android:text="@string/q4a1" />
+
+        <CheckBox
+            android:id="@+id/q4ch2"
+            style="@style/AnswersStyle"
+            android:text="@string/q4a2" />
+
+        <CheckBox
+            android:id="@+id/q4ch3"
+            style="@style/AnswersStyle"
+            android:text="@string/q4a3" />
+
+        <CheckBox
+            android:id="@+id/q4ch4"
+            style="@style/AnswersStyle"
+            android:text="@string/q4a4" />
+
+
+        <!--Question5-->
+        <TextView
+            style="@style/QuestionFont"
+            android:background="@drawable/question"
+            android:text="@string/q5" />
+
+        <io.github.kexanie.library.MathView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:engine="MathJax"
+            app:text="@string/q5_math" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp">
+
+            <RadioButton
+                android:id="@+id/q5rb1"
+                style="@style/AnswersStyle"
+                android:text="@string/q5a1" />
+
+            <RadioButton
+                android:id="@+id/q5rb2"
+                style="@style/AnswersStyle"
+                android:text="@string/q5a2" />
+
+            <RadioButton
+                android:id="@+id/q5rb3"
+                style="@style/AnswersStyle"
+                android:text="@string/q5a3" />
+
+            <RadioButton
+                android:id="@+id/q5rb4"
+                style="@style/AnswersStyle"
+                android:text="@string/q5a4" />
+
+        </RadioGroup>
+
+        <!--Question6-->
+        <TextView
+            style="@style/QuestionFont"
+            android:background="@drawable/question"
+            android:text="@string/q6" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="171dp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:maxHeight="150dp"
+                android:maxWidth="100dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/q6" />
+
+            <io.github.kexanie.library.MathView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:engine="MathJax"
+                app:text="@string/q6_math" />
+
+
+        </LinearLayout>
+
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp">
+
+            <RadioButton
+                android:id="@+id/q6rb1"
+                style="@style/AnswersStyle"
+                android:text="@string/q6a1" />
+
+            <RadioButton
+                android:id="@+id/q6rb2"
+                style="@style/AnswersStyle"
+                android:text="@string/q6a2" />
+
+            <RadioButton
+                android:id="@+id/q6rb3"
+                style="@style/AnswersStyle"
+                android:text="@string/q6a3" />
+
+            <RadioButton
+                android:id="@+id/q6rb4"
+                style="@style/AnswersStyle"
+                android:text="@string/q6a4" />
+
+        </RadioGroup>
+
+        <!--Question7 answer: 0-->
+        <TextView
+            style="@style/QuestionFont"
+            android:background="@drawable/question"
+            android:text="@string/q7" />
+
+        <io.github.kexanie.library.MathView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:engine="MathJax"
+            app:text="@string/q7_math" />
+
+        <EditText
+            android:id="@+id/q7et1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:ems="10"
+            android:hint="@string/edit_txt_hint"
+            android:inputType="number" />
+
+        <!--Question8-->
+        <TextView
+            style="@style/QuestionFont"
+            android:background="@drawable/question"
+            android:text="@string/q8" />
+
+        <io.github.kexanie.library.MathView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:engine="MathJax"
+            app:text="@string/q8_math" />
+
+        <CheckBox
+            android:id="@+id/q8ch1"
+            style="@style/AnswersStyle"
+            android:text="@string/q8a1" />
+
+        <CheckBox
+            android:id="@+id/q8ch2"
+            style="@style/AnswersStyle"
+            android:text="@string/q8a2" />
+
+        <CheckBox
+            android:id="@+id/q8ch3"
+            style="@style/AnswersStyle"
+            android:text="@string/q8a3" />
+
+        <CheckBox
+            android:id="@+id/q8ch4"
+            style="@style/AnswersStyle"
+            android:text="@string/q8a4" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="8dp"
+                android:onClick="checkAnswers"
+                android:text="Submit" />
+
+            <Button
+                android:id="@+id/resetButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="8dp"
+                android:onClick="reset"
+                android:text="Reset" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>
